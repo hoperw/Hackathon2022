@@ -10,20 +10,20 @@
 </head>
 
 <body>
-    <h1>Rainbow Sheep</h1>
+    <h1>Funding Access for Education</h1>
     <!-- Form for student submitting background info -->
-    <form action="/student" method="get">
+    <form action="/student" method="get" id="form">
         <!-- GPA Input -->
         <label for="GPA">Enter your GPA: </label>
-        <input type="text" name="GPA" id="GPA">
-        <label for="cars">Choose a car:</label>
-
+        <input type="text" name="gpa" id="GPA">
+        
         <!-- MAJOR Input -->
-        <select id="major">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="vw">VW</option>
-            <option value="audi" selected>Audi</option>
+        <label for="major">Major</label>
+        <select id="major" name="major">
+            <option value="computerScience">Computer Science</option>
+            <option value="engineering">Engineering</option>
+            <option value="business">Business</option>
+            <option value="science" selected>Science</option>
         </select>
         <button type="submit">Submit</button>
     </form>
