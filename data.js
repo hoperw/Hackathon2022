@@ -18,7 +18,7 @@ exports.data = {
                 "minGPA": 2.5,
                 "needBased": false,
                 "studentType": [],
-                "major": ["computer science", "engineering", "health"]
+                "major": ["computerScience", "engineering", "health"]
             },
             {
                 "id": 3,
@@ -27,7 +27,7 @@ exports.data = {
                 "minGPA": 2.5,
                 "needBased": false,
                 "studentType": [],
-                "major": ["computer science", "health"]
+                "major": ["computerScience", "health"]
             },
             {
                 "id": 4,
@@ -89,7 +89,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5939",
                 "minGPA": 2.5,
                 "needBased": false,
-                "studentType": ["university", "TXstate"],
+                "studentType": ["university"],
                 "major": ["education"]
             }
         ]
