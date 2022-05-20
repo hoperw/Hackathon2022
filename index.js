@@ -42,15 +42,20 @@ app.get('/student', (req, res) => {
 
     let results = []
 
-    mainData.forEach(el => {
+    if (gpa < 5 && gpa >= 0) {
 
-        if(el.needBased == user.needBased && 
-            el.major.includes(user.major)){
-            results.push(el)
-        }
+        mainData.forEach(el => {
 
+            if(el.needBased == user.needBased && 
+                (el.major.includes(user.major) || el.major.length == 0) &&
+                el.minGPA >= user.gpa && 
+                (el.studentType.includes(user.studentType) || el.studentType.length == 0)) {
 
-    })
+                results.push(el)
+            }
+    
+        })
+    }
 
     console.log("I am the results you are getting", results)
 
