@@ -62,9 +62,36 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6013",
                 "minGPA": 2.0,
                 "needBased": false,
-                "studentType": [""],
+                "studentType": ["AS"],
                 "major": ["agriculture"]
             },
+            {
+                "id": 8,
+                "name": "Honors Program Scholarship",
+                "url": "https://austincc.academicworks.com/opportunities/6211",
+                "minGPA": 3.5,
+                "needBased": false,
+                "studentType": ["honors"],
+                "major": []
+            },
+            {
+                "id": 9,
+                "name": "SEMI/Frank Squires Scholarship",
+                "url": "https://austincc.academicworks.com/opportunities/5350",
+                "minGPA": 2.5,
+                "needBased": false,
+                "studentType": ["HS", "GED"],
+                "major": ["engineering"]
+            },
+            {
+                "id": 10,
+                "name": "Ryan Endowed Scholarship",
+                "url": "https://austincc.academicworks.com/opportunities/5939",
+                "minGPA": 2.5,
+                "needBased": false,
+                "studentType": ["university", "TXstate"],
+                "major": ["education"]
+            }
         ]
     }
 }
