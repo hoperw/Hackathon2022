@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hackathon 2022</title>
+</head>
+
+<body>
+    <h1>Rainbow Sheep</h1>
+    <!-- Form for student submitting background info -->
+    <form action="/student" method="get">
+        <!-- GPA Input -->
+        <label for="GPA">Enter your GPA: </label>
+        <input type="text" name="GPA" id="GPA">
+        <label for="cars">Choose a car:</label>
+
+        <!-- MAJOR Input -->
+        <select id="major">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="vw">VW</option>
+            <option value="audi" selected>Audi</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
