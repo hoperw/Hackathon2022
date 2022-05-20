@@ -8,6 +8,8 @@
 </head>
 <body>
     
+    <%- include('partials/navbar.ejs') %>
+    <h1>Results</h1>
     <% results.forEach(obj => { %>
       <div class="data-card">
           <p><%=obj.name %></p>

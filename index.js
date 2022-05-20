@@ -20,12 +20,16 @@ app.get('/getInfo', (req, res) => {
     res.render('form')
 })
 
+app.get('/resources', (req, res) => {
+    res.render('resources')
+})
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
 
 
 app.get('/student', (req, res) => {
-
-
     const {gpa, major, needBased, studentType} = req.query
 
     let user = {
