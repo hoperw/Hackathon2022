@@ -31,7 +31,8 @@ app.get('/student', (req, res) => {
     let user = {
         gpa: gpa,
         major: major,
-        needBased: Boolean(needBased)
+        needBased: Boolean(needBased),
+        studentType: studentType
     }
     console.log("I am user data", user)
 
@@ -39,12 +40,11 @@ app.get('/student', (req, res) => {
 
     mainData.forEach(el => {
 
-        if(el.needBased == user.needBased){
+        if(el.needBased == user.needBased && 
+            el.major.includes(user.major)){
             results.push(el)
         }
-        if (el.major.includes(user.major)){
-            results.push(el)
-        }
+
 
     })
 
