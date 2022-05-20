@@ -20,12 +20,16 @@ app.get('/getInfo', (req, res) => {
     res.render('form')
 })
 
+app.get('/resources', (req, res) => {
+    res.render('resources')
+})
 
+app.get('/about', (req, res) => {
+    res.render('about')
+})
 
 
 app.get('/student', (req, res) => {
-
-
     const {gpa, major, needBased} = req.query
 
     let user = {
@@ -39,13 +43,9 @@ app.get('/student', (req, res) => {
 
     mainData.forEach(el => {
 
-        if(el.needBased == user.needBased){
+        if(el.needBased == user.needBased && eel.major.includes(user.major)){
             results.push(el)
         }
-        if (el.major.includes(user.major)){
-            results.push(el)
-        }
-
     })
 
     console.log("I am the results you are getting", results)
