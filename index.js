@@ -30,7 +30,7 @@ app.get('/about', (req, res) => {
 
 
 app.get('/student', (req, res) => {
-    const {gpa, major, needBased} = req.query
+    const {gpa, major, needBased, studentType} = req.query
 
     let user = {
         gpa: gpa,
