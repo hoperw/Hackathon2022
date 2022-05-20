@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 })
 
 
-
 app.get('/getInfo', (req, res) => {
     res.render('form')
 })
