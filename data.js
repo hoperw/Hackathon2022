@@ -1,4 +1,4 @@
-export default {
+exports.data = {
     "success": true,
     "data": {
         "aid": [
