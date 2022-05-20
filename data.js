@@ -134,7 +134,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5809",
                 "minGPA": 0,
                 "needBased": true,
-                "studentType": [SFHS],
+                "studentType": ["SFHS"],
                 "major": []
             },
             {
@@ -152,7 +152,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5813",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [AS],
+                "studentType": ["AS"],
                 "major": []
             },
             {
@@ -180,7 +180,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5955",
                 "minGPA": 3.0,
                 "needBased": true,
-                "studentType": [GED],
+                "studentType": ["GED"],
                 "major": []
             },
             {
@@ -189,7 +189,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6065",
                 "minGPA": 2.0,
                 "needBased": true,
-                "studentType": [Vet],
+                "studentType": ["vet"],
                 "major": []
             },
             {
