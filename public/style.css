@@ -1,14 +1,18 @@
-body {
-    background-color: #4D1979;
+#body {
+    background-color: #e9e0c9;
 }
+
+
+
 
 h1 {
     text-align: center;
     color: #efefef
 }
 
-a {
-    color:white;
+/* Link colors */
+.navbar-nav a:hover{
+    color: #002F6C;
 }
 #form {
     background: #efefef;
@@ -18,4 +22,9 @@ a {
     height: 500px;
     padding: 25px 10px;
 
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
 }

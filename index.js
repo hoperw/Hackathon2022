@@ -8,6 +8,7 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 const {data} = require('./data')
+
 const mainData = data.data.aid
 
 app.get('/', (req, res) => {
@@ -24,9 +25,6 @@ app.get('/resources', (req, res) => {
     res.render('resources')
 })
 
-app.get('/about', (req, res) => {
-    res.render('about')
-})
 
 
 app.get('/student', (req, res) => {
