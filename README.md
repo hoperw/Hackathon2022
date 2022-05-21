@@ -1,4 +1,10 @@
 <h1>ACC Riverhacks Project<h1>
+  
+  <h2>Getting Started:  Accessing the Site</h2>
+  <p>After pulling the project from the repo, in the terminal type:  node install</p>
+  <p>This will install required dependencies for the project</p>
+  <p>Afterwards, type</p>
+  <p>In the browser address bar type:  localhost:3000</p>
 
   <h3>Theme:  Increasing Access to Education</h3>
 
