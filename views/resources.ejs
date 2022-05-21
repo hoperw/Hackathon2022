@@ -1,11 +1,26 @@
 <%- include('partials/header.ejs') %>
 
-    <h1>Student Resources</h1>
-    <% mainResources.forEach(obj => { %>
-      <div class="data-card">
-          <a href="<%=obj.url%>"><%=obj.name %></a>
-      </div>
-    <% }) %>
+    <h1 class="my-4">Free learning Resources</h1>
+    <p class="text-center">These are resources for free learning, or finding more funding for school.</p>
+
+    <div class="results-container">
+
+      <% mainResources.forEach(obj => { %>
+
+        <div class="card mx-3 my-3 text-center">
+          <h5 class="card-header">Name: <%=obj.name %></h5>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+            <a href="<%=obj.url%>" class="btn btn-primary">Website</a>
+          </div>
+        </div>
+      <% }) %>
+    
+
+    
+    </div>
+
 </body>
 </html>
 
