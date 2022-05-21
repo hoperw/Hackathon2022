@@ -8,7 +8,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5977",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["HVAC", "business", "construction", "accounting"],
             },
             {
@@ -17,7 +17,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5777",
                 "minGPA": 2.5,
                 "needBased": false,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["computerScience", "engineering", "health"]
             },
             {
@@ -26,7 +26,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6131",
                 "minGPA": 2.5,
                 "needBased": false,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["computerScience", "health"]
             },
             {
@@ -35,7 +35,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5801",
                 "minGPA": 2.5,
                 "needBased": false,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["veterinary"]
             },
             {
@@ -45,7 +45,7 @@ exports.data = {
                 "minGPA": 2.0,
                 "needBased": false,
                 "studentType": ["GED"],
-                "major": []
+                "major": ["NA"]
             },
             {
                 "id": 6,
@@ -72,7 +72,7 @@ exports.data = {
                 "minGPA": 3.5,
                 "needBased": false,
                 "studentType": ["honors"],
-                "major": []
+                "major": ["NA"]
             },
             {
                 "id": 9,
@@ -98,7 +98,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5903",
                 "minGPA": 2.5,
                 "needBased": false,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["dance", "drama"]
             },
             {
@@ -107,8 +107,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5903",
                 "minGPA": 0,
                 "needBased": false,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
             },
             {
                 "id": 13,
@@ -116,7 +116,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6217",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["business", "computer science", "design", "manufacturing", "construction", "science", "engineering"]
             },
             {
@@ -125,7 +125,7 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6093",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [],
+                "studentType": ["NA"],
                 "major": ["health"]
             },
             {
@@ -134,8 +134,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5809",
                 "minGPA": 0,
                 "needBased": true,
-                "studentType": ["SFHS"],
-                "major": []
+                "studentType": ["HS"],
+                "major": ["NA"]
             },
             {
                 "id": 16,
@@ -143,8 +143,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5893",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
             },
             {
                 "id": 17,
@@ -153,7 +153,7 @@ exports.data = {
                 "minGPA": 2.5,
                 "needBased": true,
                 "studentType": ["AS"],
-                "major": []
+                "major": ["NA"]
             },
             {
                 "id": 18,
@@ -161,8 +161,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6129",
                 "minGPA": 2.5,
                 "needBased": true,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
 
             },
 {
@@ -171,8 +171,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/6017",
                 "minGPA": 3.0,
                 "needBased": true,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
             },
             {
                 "id": 20,
@@ -181,7 +181,7 @@ exports.data = {
                 "minGPA": 3.0,
                 "needBased": true,
                 "studentType": ["GED"],
-                "major": []
+                "major": ["NA"]
             },
             {
                 "id": 21,
@@ -190,7 +190,7 @@ exports.data = {
                 "minGPA": 2.0,
                 "needBased": true,
                 "studentType": ["vet"],
-                "major": []
+                "major": ["NA"]
             },
             {
                 "id": 22,
@@ -198,8 +198,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5865",
                 "minGPA": 3.0,
                 "needBased": true,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
             },
             {
                 "id": 23,
@@ -207,8 +207,8 @@ exports.data = {
                 "url": "https://austincc.academicworks.com/opportunities/5865",
                 "minGPA": 3.0,
                 "needBased": true,
-                "studentType": [],
-                "major": []
+                "studentType": ["NA"],
+                "major": ["NA"]
             }
         ]
     }

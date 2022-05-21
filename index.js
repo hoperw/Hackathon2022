@@ -12,7 +12,6 @@ const {resources} = require('./resources')
 
 const mainData = data.data.aid
 const mainResources = resources.resources.resources
-//console.log(mainResources)
 
 app.get('/', (req, res) => {
     res.render('landing')
@@ -34,27 +33,39 @@ app.get('/student', (req, res) => {
     const {gpa, major, needBased, studentType} = req.query
 
     let user = {
-        gpa: gpa,
+        gpa: parseInt(gpa),
         major: major,
         needBased: Boolean(needBased),
-        studentType: studentType
+        studentType: studentType == undefined ? "NA" : studentType
     }
 
     let results = []
 
-    if (gpa < 5 && gpa >= 0) {
+    if (user.gpa < 5 && user.gpa >= 0 && user.needBased == true) {
 
         mainData.forEach(el => {
 
-            if(el.needBased == user.needBased && 
-                (el.major.includes(user.major) || el.major.length == 0) &&
+            if ((el.major.includes(user.major) || el.major.includes("NA")) &&
                 el.minGPA >= user.gpa && 
-                (el.studentType.includes(user.studentType) || el.studentType.length == 0)) {
+                (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
+
+                results.push(el)
+            }
+        })
+    } else {
+        mainData.forEach(el => {
+
+            if (user.needBased == false && 
+                (el.major.includes(user.major) || el.major.includes("NA")) &&
+                el.minGPA >= user.gpa && 
+                (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
 
                 results.push(el)
             }
         })
     }
+
+    console.log(user)
 
     res.render('results', {results})
 })
