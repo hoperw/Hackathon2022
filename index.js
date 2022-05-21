@@ -8,8 +8,11 @@ app.use(express.static('public'))
 app.set('view engine', 'ejs')
 
 const {data} = require('./data')
+const {resources} = require('./resources')
 
 const mainData = data.data.aid
+const mainResources = resources.resources.resources
+console.log(mainResources)
 
 app.get('/', (req, res) => {
     res.render('landing')
@@ -21,9 +24,10 @@ app.get('/getInfo', (req, res) => {
 })
 
 app.get('/resources', (req, res) => {
-    res.render('resources')
-})
 
+    res.render('resources', {mainResources})
+
+})
 
 
 app.get('/student', (req, res) => {
@@ -35,7 +39,6 @@ app.get('/student', (req, res) => {
         needBased: Boolean(needBased),
         studentType: studentType
     }
-    console.log("I am user data", user)
 
     let results = []
 
@@ -50,17 +53,11 @@ app.get('/student', (req, res) => {
 
                 results.push(el)
             }
-    
         })
     }
 
-    console.log("I am the results you are getting", results)
-
     res.render('results', {results})
 })
-
-
-
 
 
 app.listen(PORT, () => {
