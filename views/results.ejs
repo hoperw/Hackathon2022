@@ -1,12 +1,33 @@
 <%- include('partials/header.ejs') %>
 
     <h1>Results</h1>
-    <% results.forEach(obj => { %>
-      <div class="data-card">
-          <p><%=obj.name %></p>
-          <a href="<%=obj.url%>">Website</a>
+     
+<div class="results-container">
+
+  <% if (results.length == 0) { %>
+    <div class="message">
+      <h2>Sorry no results try looking under our resource page</h2>
+      <a href="/resources">Resource page</a>
+    </div>
+  <% } %>
+
+
+  <% results.forEach(obj => { %>
+
+    <div class="card mx-3 my-3 d-flex justify-content-center">
+      <h5 class="card-header">Name: <%=obj.name %></h5>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+        <a href="<%=obj.url%>" class="btn btn-primary">Website</a>
       </div>
-    <% }) %>
+    </div>
+
+  <% }) %>
+
+
+</div>
+
 </body>
 </html>
 

@@ -1,5 +1,11 @@
+
+
+* {
+    font-size: 18px;
+}
+
 #body {
-    background-color: #e9e0c9;
+    background-color: #eceae6;
 }
 
 
@@ -13,18 +19,34 @@ h1 {
 /* Link colors */
 .navbar-nav a:hover{
     color: #002F6C;
+
 }
+
+
+
+
 #form {
     background: #efefef;
     margin: 0 auto;
     border-radius: 25px;
     width: 50%;
-    height: 500px;
+    height: 75%;
     padding: 25px 10px;
+	box-shadow: rgba(0, 0, 0, 0.288) 0px 15px 25px, rgba(131, 80, 193, 0.849) 0px 5px 10px;
 
 }
 
 .logo {
     width: 50px;
     height: 50px;
+}
+
+.results-container {
+    margin: 0 auto;
+    width: 50%;
+    padding: 25px 10px;
+    border-radius: 25px;
+    background: #efefef;
+	box-shadow: rgba(0, 0, 0, 0.288) 0px 15px 25px, rgba(131, 80, 193, 0.849) 0px 5px 10px;
+
 }
