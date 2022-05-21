@@ -1,6 +1,6 @@
 <h1>ACC Riverhacks Project<h1>
 
-  <h2>Theme:  Increasing Access to Education</h2>
+  <h3>Theme:  Increasing Access to Education</h3>
 
   <h6>Our Goal:  To create an application that simplifes finding access to resources to make college affordable and access to other quality educational resources.</h6>
   
