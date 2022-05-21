@@ -103,15 +103,6 @@ exports.data = {
             },
             {
                 "id": 12,
-                "name": "Adult Career Scholars",
-                "url": "https://austincc.academicworks.com/opportunities/5903",
-                "minGPA": 0,
-                "needBased": false,
-                "studentType": ["NA"],
-                "major": ["NA"]
-            },
-            {
-                "id": 13,
                 "name": "Wilsonart Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/6217",
                 "minGPA": 2.5,
@@ -120,7 +111,7 @@ exports.data = {
                 "major": ["business", "computer science", "design", "manufacturing", "construction", "science", "engineering"]
             },
             {
-                "id": 14,
+                "id": 13,
                 "name": "WellSky Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/6093",
                 "minGPA": 2.5,
@@ -129,7 +120,7 @@ exports.data = {
                 "major": ["health"]
             },
             {
-                "id": 15,
+                "id": 14,
                 "name": "Well-Wisher's Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/5809",
                 "minGPA": 0,
@@ -138,7 +129,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 16,
+                "id": 15,
                 "name": "Ward-Fuller Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/5893",
                 "minGPA": 2.5,
@@ -147,7 +138,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 17,
+                "id": 16,
                 "name": "Wallace Vog Endowed Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/5813",
                 "minGPA": 2.5,
@@ -156,7 +147,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 18,
+                "id": 17,
                 "name": "W.R. Peck Young Endowed Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/6129",
                 "minGPA": 2.5,
@@ -166,7 +157,7 @@ exports.data = {
 
             },
 {
-                "id": 19,
+                "id": 18,
                 "name": "Visual Communication Endowed Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/6017",
                 "minGPA": 3.0,
@@ -175,7 +166,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 20,
+                "id": 19,
                 "name": "Victor W. Hwang Endowed Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/5955",
                 "minGPA": 3.0,
@@ -184,7 +175,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 21,
+                "id": 20,
                 "name": "Veterans Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/6065",
                 "minGPA": 2.0,
@@ -193,7 +184,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 22,
+                "id": 21,
                 "name": "UFCU Scholars",
                 "url": "https://austincc.academicworks.com/opportunities/5865",
                 "minGPA": 3.0,
@@ -202,7 +193,7 @@ exports.data = {
                 "major": ["NA"]
             },
             {
-                "id": 23,
+                "id": 22,
                 "name": "Travis County Medical Alliance Endowed Scholarship",
                 "url": "https://austincc.academicworks.com/opportunities/5865",
                 "minGPA": 3.0,

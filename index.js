@@ -43,7 +43,7 @@ app.get('/student', (req, res) => {
         if (user.needBased == true) {
             mainData.forEach(el => {
                 if ((el.major.includes(user.major) || el.major.includes("NA")) &&
-                    el.minGPA >= user.gpa && 
+                    el.minGPA <= user.gpa && 
                     (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
         
                     results.push(el)
@@ -54,7 +54,7 @@ app.get('/student', (req, res) => {
 
                 if (el.needBased == false && 
                     (el.major.includes(user.major) || el.major.includes("NA")) &&
-                    el.minGPA >= user.gpa && 
+                    el.minGPA <= user.gpa && 
                     (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
 
                     results.push(el)
@@ -62,7 +62,7 @@ app.get('/student', (req, res) => {
             })
         }
     }
-
+    console.log(user)
     res.render('results', {results})
 })
 
