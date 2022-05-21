@@ -1,6 +1,12 @@
-
-    <%- include('partials/header.ejs') %>
+<%- include('partials/header.ejs') %>
 
     <h1>Student Resources</h1>
+    <% mainResources.forEach(obj => { %>
+      <div class="data-card">
+          <a href="<%=obj.url%>"><%=obj.name %></a>
+      </div>
+    <% }) %>
+</body>
+</html>
 
-    <%- include('partials/footer.ejs') %>
+<%- include('partials/footer.ejs') %>
