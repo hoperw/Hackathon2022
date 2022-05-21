@@ -52,7 +52,7 @@ app.get('/student', (req, res) => {
         } else {
             mainData.forEach(el => {
 
-                if (user.needBased == false && 
+                if (el.needBased == false && 
                     (el.major.includes(user.major) || el.major.includes("NA")) &&
                     el.minGPA >= user.gpa && 
                     (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {

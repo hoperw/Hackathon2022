@@ -5,7 +5,7 @@
 }
 
 #body {
-    background-color: #eceae6;
+    background-color: whitesmoke;
     height: 100%;
     margin-bottom: 200px;
 }
@@ -19,7 +19,6 @@ h1 {
 /* Link colors */
 .navbar-nav a:hover{
     color: #1e5eb1;
-
 }
 
 
@@ -33,7 +32,6 @@ h1 {
     height: 75%;
     padding: 25px 10px;
 	box-shadow: rgba(0, 0, 0, 0.288) 0px 15px 25px, rgba(131, 80, 193, 0.849) 0px 5px 10px;
-
 }
 
 .logo {
