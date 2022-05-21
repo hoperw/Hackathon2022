@@ -12,7 +12,7 @@ const {resources} = require('./resources')
 
 const mainData = data.data.aid
 const mainResources = resources.resources.resources
-console.log(mainResources)
+//console.log(mainResources)
 
 app.get('/', (req, res) => {
     res.render('landing')

@@ -6,6 +6,8 @@
 
 #body {
     background-color: #eceae6;
+    height: 100%;
+    margin-bottom: 200px;
 }
 
 
@@ -16,7 +18,7 @@ h1 {
 
 /* Link colors */
 .navbar-nav a:hover{
-    color: #002F6C;
+    color: #1e5eb1;
 
 }
 
