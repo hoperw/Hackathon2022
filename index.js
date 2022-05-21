@@ -23,49 +23,45 @@ app.get('/getInfo', (req, res) => {
 })
 
 app.get('/resources', (req, res) => {
-
     res.render('resources', {mainResources})
-
 })
 
 
 app.get('/student', (req, res) => {
-    const {gpa, major, needBased, studentType} = req.query
+    let {gpa, major, needBased, studentType} = req.query
 
     let user = {
-        gpa: parseInt(gpa),
+        gpa: parseFloat(gpa),
         major: major,
         needBased: Boolean(needBased),
-        studentType: studentType == undefined ? "NA" : studentType
+        studentType: studentType == undefined ? studentType = "NA" : studentType
     }
 
     let results = []
 
-    if (user.gpa < 5 && user.gpa >= 0 && user.needBased == true) {
+    if (user.gpa < 5 && user.gpa >= 0 ) {
+        if (user.needBased == true) {
+            mainData.forEach(el => {
+                if ((el.major.includes(user.major) || el.major.includes("NA")) &&
+                    el.minGPA >= user.gpa && 
+                    (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
+        
+                    results.push(el)
+                }
+                })
+        } else {
+            mainData.forEach(el => {
 
-        mainData.forEach(el => {
+                if (user.needBased == false && 
+                    (el.major.includes(user.major) || el.major.includes("NA")) &&
+                    el.minGPA >= user.gpa && 
+                    (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
 
-            if ((el.major.includes(user.major) || el.major.includes("NA")) &&
-                el.minGPA >= user.gpa && 
-                (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
-
-                results.push(el)
-            }
-        })
-    } else {
-        mainData.forEach(el => {
-
-            if (user.needBased == false && 
-                (el.major.includes(user.major) || el.major.includes("NA")) &&
-                el.minGPA >= user.gpa && 
-                (el.studentType.includes(user.studentType) || el.studentType.includes("NA"))) {
-
-                results.push(el)
-            }
-        })
+                    results.push(el)
+                }
+            })
+        }
     }
-
-    console.log(user)
 
     res.render('results', {results})
 })
