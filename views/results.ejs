@@ -5,13 +5,12 @@
 <div class="results-container">
 
   <% if (results.length == 0) { %>
-    <div class="message text-center">
+    <div class="results-messages">
       <h2>Sorry no results try looking under our resource page</h2>
-      <a href="/resources">Resource page</a>
+      <a href="/resources" class="resource-btn">Resource page</a>
     </div>
   <% } %>
-
-
+  
   <% results.forEach(obj => { %>
 
     <div class="card mx-3 my-3 text-center">
@@ -26,6 +25,5 @@
 </body>
 </html>
 
-<%- include('partials/footer.ejs') %>
 
 

@@ -1,9 +1,10 @@
 <!-- Navbar -->
 <%- include('partials/header.ejs') %>
-
-  <h1 class="my-4">Find funding for school</h1>
-  <p class="text-center">Enter your information to find scholarships, programs tailored for you.</p>
-
+<div>
+  <h1 class="">Find funding for school</h1>
+  <p class="subtitle">Enter your information to find scholarships, programs tailored for you.</p>
+</div>
+<div id="form-container">
   <!-- Form for student submitting background info -->
   <form action="/student" method="get" id="form">
     <!-- GPA Input -->
@@ -14,7 +15,7 @@
 
 
     <!-- MAJOR Input -->
-    <div class="my-2">
+    <div class="select-container">
       <label for="major" class="form-label">Major</label>
       <select id="major" name="major" class="form-select" aria-label="Default select example">
         <option value="computerScience">Computer Science</option>
@@ -36,13 +37,13 @@
     </div>
 
     <!-- NeedBased -->
-    <div class="my-2">
+    <div class="checkbox-container">
       <label for="needBased">Are you in need of financial assistance? </label>
       <input type="checkbox" name="needBased" id="needBased" value="true" class="form-check-input">
     </div>
 
     <!-- Student Type -->
-    <div class="student-type my-2">
+    <div class="checkbox-container">
       <p>Check all that apply to you.</p>
       <div class="form-check">
         <label for="studentType0" class="form-check-label mx-1">Are you planning on transferring to a University?</label>
@@ -70,10 +71,11 @@
     </div>
 
     <!-- Submit button -->
-    <div class="d-grid gap-2">
-      <button class="btn btn-primary" type="submit">Submit</button>
+    <div class="form-button-wrapper">
+      <button class="form-btn" type="submit">Submit</button>
     </div>
   </form>
+  </div>
 
 
 
