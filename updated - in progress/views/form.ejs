@@ -1,0 +1,82 @@
+<!-- Navbar -->
+<%- include('partials/header.ejs') %>
+<div>
+  <h1 class="">Find funding for school</h1>
+  <p class="subtitle">Enter your information to find scholarships, programs tailored for you.</p>
+</div>
+<div id="form-container">
+  <!-- Form for student submitting background info -->
+  <form action="/student" method="get" id="form">
+    <!-- GPA Input -->
+    <div class="my-2">
+      <label for="GPA" class="form-label">Enter your GPA: </label>
+      <input type="text" name="gpa" id="GPA" class="form-control" value = 0 placeholder="Enter GPA on 4.0 scale here...">
+    </div>
+
+
+    <!-- MAJOR Input -->
+    <div class="select-container">
+      <label for="major" class="form-label">Major</label>
+      <select id="major" name="major" class="form-select" aria-label="Default select example">
+        <option value="computerScience">Computer Science</option>
+        <option value="engineering">Engineering</option>
+        <option value="business">Business</option>
+        <option value="veterinary">Veterinary</option>
+        <option value="health">Health</option>
+        <option value="HVAC">HVAC</option>
+        <option value="construction">Construction</option>
+        <option value="accounting">Accounting</option>
+        <option value="dance">Dance</option>
+        <option value="drama">Drama</option>
+        <option value="education">Education</option>
+        <option value="design">Design</option>
+        <option value="manufacturing">Manufacturing</option>
+        <option value="science" selected>Science</option>
+      </select>
+
+    </div>
+
+    <!-- NeedBased -->
+    <div class="checkbox-container">
+      <label for="needBased">Are you in need of financial assistance? </label>
+      <input type="checkbox" name="needBased" id="needBased" value="true" class="form-check-input">
+    </div>
+
+    <!-- Student Type -->
+    <div class="checkbox-container">
+      <p>Check all that apply to you.</p>
+      <div class="form-check">
+        <label for="studentType0" class="form-check-label mx-1">Are you planning on transferring to a University?</label>
+        <input type="checkbox" class="form-control form-check-input" name="studentType" id="studentType0"
+          value="university">
+      </div>
+      <div class="form-check">
+        <label for="studentType1" class="form-check-label  mx-1">Are you a recent Highschool Graduate?</label>
+        <input type="checkbox" class="form-control form-check-input" name="studentType" id="studentType1" value="HS">
+      </div>
+
+      <div class="form-check">
+        <label for="studentType3" class="form-check-label mx-1">Are you a recent GED recepient?</label>
+        <input type="checkbox" class="form-control form-check-input" name="studentType" id="studentType2" value="GED">
+      </div>
+      <div class="form-check">
+        <label for="studentType3" class="form-check-label mx-1">Are you a veteran?</label>
+        <input type="checkbox" class="form-control form-check-input" name="studentType" id="studentType3" value="vet">
+      </div>
+
+      <div class="form-check">
+        <label for="studentType4" class="form-check-label mx-1">Are you a purusing an Associates?</label>
+        <input type="checkbox" class="form-control form-check-input" name="studentType" id="studentType4" value="AS">
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    <div class="form-button-wrapper">
+      <button class="form-btn" type="submit">Submit</button>
+    </div>
+  </form>
+  </div>
+
+
+
+  <%- include('partials/footer.ejs') %>

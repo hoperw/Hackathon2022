@@ -1,0 +1,29 @@
+<%- include('partials/header.ejs') %>
+
+    <h1 class="">Free learning Resources</h1>
+    <p class="subtitle">These are resources for free learning, or finding more funding for school.</p>
+
+    <div class="results-container">
+
+      <% mainResources.forEach(obj => { %>
+
+        <div class="resource-card">
+          <h5 class="card-header"><%=obj.name %></h5>
+          <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text"><%=obj.description%></p>
+            <div class="resource-btn-container">
+            <a href="<%=obj.url%>" class="resource-btn">View Site</a>
+            </div>
+          </div>
+        </div>
+      <% }) %>
+    
+
+    
+    </div>
+
+</body>
+</html>
+
+<%- include('partials/footer.ejs') %>
